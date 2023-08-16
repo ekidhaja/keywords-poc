@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Admin from './components/Admin';
 import BO from './components/BO';
 
-export const baseURL = 'http://localhost:4000';
+export const baseURL = 'https://keywords-poc-backend-nm3zy1f4d-ekidhaja.vercel.app/all-users';
 const App: React.FC = () => {
   const [loggedInUser, setLoggedInUser] = useState<{ userId: string, type: string, name: string, tenantId: string } | null>(null);
   const [users, setUsers] = useState<any[]>([]);
