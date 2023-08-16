@@ -26,30 +26,9 @@ app.put('/keywords/:tenantId', (req, res) => {
     res.send({ message: "keywords updated"});
 });
 
-// // Fetch BSO list for dropdown
-// app.get('/bsos', (req, res) => {
-//   res.send(BusinessTable);
-// });
-
-// // Fetch BOs for a specific BSO
-// app.get('/bos/:tenantId', (req, res) => {
-//   const tenantId = req.params.tenantId;
-//   const bos = UsersTable.filter(user => user.type === 'BO' && user.tenantId === tenantId);
-//   res.send(bos);
-// });
-
 app.get('/all-users', (req, res) => {
     res.status(200).json(UsersTable);
 });
-
-// // Login endpoint to authenticate and return the user data
-// app.post('/login', (req, res) => {
-//   const { userId } = req.body;
-//   console.log('data received is: ', req.body)
-//   const user = UsersTable.find(u => u.userId === userId);
-//   if (!user) return res.status(404).send({ message: "User not found" });
-//   res.send(user);
-// });
 
 app.listen(port, () => {
     console.log(`Server started at port ${port}`)
