@@ -1,0 +1,16 @@
+{
+  "name": "gologic-keywords-poc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "workspaces": ["packages/*"],
+  "scripts": {
+    "start:backend": "cd packages/backend && npx nodemon src/index.ts",
+    "start:frontend": "cd packages/frontend && npm start",
+    "start": "npm run start:backend & npm run start:frontend",
+    "install-deps": "npm install --prefix packages/frontend && npm install --prefix packages/backend"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

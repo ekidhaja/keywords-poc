@@ -1,0 +1,65 @@
+/* Global styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+input[type="text"], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+input[type="text"]:focus, select:focus {
+  border-color: #007BFF;
+  outline: none;
+  box-shadow: 0 0 5px #007BFF;
+}
+
+label {
+  display: block;
+  margin-top: 16px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Admin & BO styles */
+.admin-content, .bo-content {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.admin-content h1, .bo-content h1 {
+  color: #007BFF;
+}
+
+
